@@ -90,9 +90,13 @@ p {
 }
 
 .container header {
+	position: sticky;
+	top: 0;
+	padding: 30px 5px 10px 5px;
 	display: flex;
 	justify-content: space-between;
-	margin: 30px 0px;
+	margin-bottom: 30px;
+	background-color: #F4F3F4;
 }
 
 .container header nav {
