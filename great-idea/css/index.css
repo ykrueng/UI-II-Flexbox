@@ -65,6 +65,14 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+@keyframes header-anima {
+    0%   {opacity:1;}
+    25%  {opacity:0.25;}
+    50%  {opacity:1;}
+    75%  {opacity:0.25;}
+    100% {opacity:1;}
+}
+
 /* General Styles */
 * {
 	font-family: 'Titillium Web', sans-serif;
@@ -98,6 +106,12 @@ p {
 .container header nav a {
 	text-decoration: none;
 	color: inherit;
+}
+
+.container header nav a:hover {
+	animation-name: header-anima;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 
 .container footer {
